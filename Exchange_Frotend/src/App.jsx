@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const token = "73a2d66fb0d78c9d490d9a7f3699d79d"; // Replace with your token
-    const socket = new WebSocket(`wss://localhost:8080/connect?token=${token}`);
+    const socket = new WebSocket(`ws://webhook.entitysport.com:8087/connect?token=${token}`);
 
     socket.onopen = () => {
       console.log("WebSocket connection established");
