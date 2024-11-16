@@ -1,0 +1,34 @@
+.cardone{
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 10px 16px;
+    justify-content: space-between;
+}
+.firstdiv{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+.betdiv{
+    display: flex;
+    flex-direction: row;
+    gap: 5.1rem;
+}
+.bet{
+    display: flex;
+    flex-direction: row;
+   gap: 0.5rem;
+}
+.blue{ 
+    width: 4rem;
+    text-align: center;
+    background-color: #7cc4f7;
+}
+
+.red{text-align: center;
+    width: 4rem;
+    background-color: #fca4b7;
+}
