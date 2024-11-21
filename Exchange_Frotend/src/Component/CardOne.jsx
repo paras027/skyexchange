@@ -33,8 +33,8 @@ console.log(val);
       </div>
       </div>
       <div className="bet">
-      <div className="blue">{val?.live_odds?.tiedmatch?.teama?.back}</div>
-      <div className="red">{val?.live_odds?.tiedmatch?.teama?.lay}</div>
+      <div className="blue">{val?.live_odds?.matchodds?.draw?.back}</div>
+      <div className="red">{val?.live_odds?.matchodds?.draw?.lay}</div>
       </div>
       <div className="bet">
       <div className="blue">{val?.live_odds?.matchodds?.teamb?.back}</div>
