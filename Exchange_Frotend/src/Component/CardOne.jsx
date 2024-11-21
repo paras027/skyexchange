@@ -3,6 +3,11 @@
 import { useEffect, useState } from "react";
 import "./cardone.css";
 const CardOne = ({val}) => {
+  const currDate = new Date().toLocaleDateString();
+  const [day, month, year] = currDate.split("/"); // Split the date by "/"
+  const formattedDate = `${year}-${day}-${month}`
+  const dateofstart = val?.date_start_ist;
+  const [date,timee] = dateofstart.split(" "); 
 console.log(val);
 
   return (
@@ -13,7 +18,10 @@ console.log(val);
       </div>
       <div className="matchname">
       {val?.title}
+      <div>{date===formattedDate?"":"Tomorrow"}</div>
+      <div>{timee}</div>
       </div>
+      
       </div>
       <div className="betdiv">
       <div className="bet">
@@ -33,9 +41,7 @@ console.log(val);
       <div className="red">{val?.live_odds?.matchodds?.teamb?.lay}</div>
       </div>
       </div>
-    </div>
-    
-  )
+    </div>)
 }
 
 export default CardOne

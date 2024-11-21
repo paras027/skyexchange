@@ -8,7 +8,7 @@ function App() {
   const [idString, setIdString] = useState(""); // To store IDs as a string
   const [messages2, setMessages2] = useState([]); // To store second API data
   const [mergedData, setMergedData] = useState([]); // Merged data
-
+ 
   // First useEffect to fetch data every 10 minutes
   useEffect(() => {
     async function fetchAllData() {
@@ -22,12 +22,14 @@ function App() {
       const formattedDate = `${year}-${day}-${month}`
       const finalDate = `${year}-${day}-${(parseInt(month,10)+2).toString()}`
       console.log(formattedDate,"date");
+    
       try {
         while (hasMoreData) {
           const response = await axios.get(
             `${baseUrl}?token=${token}&per_page=1000&&paged=${currentPage}&date=${formattedDate}_${finalDate}`
           );
-          console.log(response.data,response.items,"lenght");
+         
+          
           const items = response.data.response.items;
           allData = [...allData, ...items];
           console.log(allData,"aldata")
