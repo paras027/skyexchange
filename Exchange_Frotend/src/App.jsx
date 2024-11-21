@@ -17,22 +17,26 @@ function App() {
       let allData = [];
       let currentPage = 1;
       let hasMoreData = true;
-
+      const currDate = new Date().toLocaleDateString();
+      const [day, month, year] = currDate.split("/"); // Split the date by "/"
+      const formattedDate = `${year}-${day}-${month}`
+      const finalDate = `${year}-${day}-${(parseInt(month,10)+2).toString()}`
+      console.log(formattedDate,"date");
       try {
         while (hasMoreData) {
           const response = await axios.get(
-            `${baseUrl}?per_page=1000&status=3&token=${token}&page=${currentPage}`
+            `${baseUrl}?token=${token}&per_page=1000&&paged=${currentPage}&date=${formattedDate}_${finalDate}`
           );
-
+          console.log(response.data,response.items,"lenght");
           const items = response.data.response.items;
           allData = [...allData, ...items];
-
+          console.log(allData,"aldata")
           const totalPages = response.data.response.total_pages;
           hasMoreData = currentPage < totalPages;
 
           currentPage++;
         }
-        console.log(allData);
+        console.log(allData,"final data");
         setMessages(allData);
 
         // Extract all IDs and create a comma-separated string
