@@ -1,0 +1,68 @@
+.mainBody{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    width: 18%;
+    height: 100%;
+    margin-left: 1rem;
+    background-color: #fff;
+}
+.left_heading{
+    position: relative;
+    padding: 0.51rem;
+    padding-left: 1rem;
+    color: #fff;
+    
+    font-size: 14px;
+    background-color: #000000;
+}
+
+.select_option{
+    display: flex;
+    align-items: center;
+    padding: 0.21rem;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 1rem;
+}
+.center{
+    width: 56%;
+    height: 100%;
+    margin-left: 1rem;
+}
+.box  {
+  width: 100%;
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+  border-top: none;
+  border-bottom: none;
+  padding: 10px 16px;
+  background-color: #FFB80C;
+}
+
+.greyoe{
+  width: 100%;
+  padding: 10px 16px;
+  background-color: #ced5da;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 12rem;
+}
+
+.greyoe>div{
+  margin-right:  2rem;
+}
+
+.right{
+    width: 26%;
+    height: 100%;
+    margin-left: 1rem;
+    background-color: #fff;
+    margin-right: 1rem;
+}

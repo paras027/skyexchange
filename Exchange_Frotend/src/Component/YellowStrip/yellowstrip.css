@@ -1,0 +1,78 @@
+.yellowstrip {
+  height: 3%;
+  width: 100%;
+  background-color: #ffc421;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.cricket_heading {
+  margin-left: 5rem;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 14px
+}
+
+.cricket_heading:hover {
+  background-color: #ffdc7a;
+}
+
+.right_heading {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  margin-right: 2rem;
+  gap: 0.5rem;
+  position: relative;
+  align-items: center;
+}
+.timezone,
+.oneclick_bet,
+.setting {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+
+  height: 100%;
+}
+
+.timezone > span {
+  font-weight: bold;
+}
+
+.oneclick_bet {
+  margin-right: 1rem;
+  background-image: linear-gradient(180deg, #4b4b4b 0%, #1e1e1e 100%);
+  padding: 1rem;
+  font-weight: bold;
+  color: #ffc421;
+}
+
+.oneclick_bet > span {
+  height: 15px;
+  width: 15px;
+  background-color: #5e5e5e;
+  border-radius: 4px;
+}
+
+.oneclick_bet:hover {
+  background-image: linear-gradient(0deg, #4b4b4b 0%, #1e1e1e 100%);
+}
+.setting {
+  font-weight: bold;
+}
+.setting > span {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,14 @@
+/* index.css */
+html, body, #root {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Make them take the full height of the viewport */
+    width: 100%; /* Ensure full width */
+    overflow: hidden; /* Prevent unwanted scrolling */
+    box-sizing: border-box; /* Include padding and border in element's width and height */
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: inherit; /* Inherit box-sizing for all elements */
+}
