@@ -1,0 +1,10 @@
+.betting-interface {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.betting-interface > * {
+  margin-bottom: 1px;
+}
+

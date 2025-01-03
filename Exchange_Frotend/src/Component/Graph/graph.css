@@ -1,0 +1,75 @@
+/* General Reset */
+  .runrate-container {
+    width: 100%;
+
+    border-radius: 10px;
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Button Section */
+  .button-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 15%;
+  }
+  
+  .button-section button {
+    background-color: #363636;
+    color: #c1c1c1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  
+  .button-section .active {
+    background-color: #f0a500;
+    color: #000;
+  }
+  
+  .button-section button:hover {
+    background-color: #505050;
+  }
+  
+  /* Chart Section */
+  .chart-section {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+  }
+  
+  .graph-area {
+    width: 100%;
+    height: 100px;
+  }
+  
+  .data-box {
+    width: 100px;
+    height: 60px;
+    background-color: #3e3e3e;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .data-display {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .side_buttons{
+    display: flex;
+    flex-direction: column;
+    width: 5%;
+  }

@@ -1,7 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Page/Home";
-
+import Home from "./Page/Home/Home";
+import Layout from "./Layout";
+import Login from "./Page/Login/Login";
+import Signup from "./Page/Signup/Signup";
+import SecondPage from "./Page/SecondPage/SecondPage";
 
 function App() {
   // const [messages, setMessages] = useState([]); // To store received messages
@@ -133,38 +136,15 @@ function App() {
 
   return (
     <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-               
-                {/*<div className="sports-container">
-        <div className="sports-header">
-          <h2>Sports Highlights</h2>
-          <div className="odds-header">
-            <div>1</div>
-            <div>X</div>
-            <div>2</div>
-          </div>
-        </div>
-        <div className="matches-list">
-          {matches.map((match) => (
-            <div key={match.match_id} className="match-row">
-              <div className="match-info">
-                <div className="teams">{match.title}</div>
-                <div className="match-time">{match.date_start}</div>
-              </div>
-              <div className="odds-container">
-                <button className="odd-btn">{match.odds?.["1"] || "--"}</button>
-                <button className="odd-btn">{match.odds?.["X"] || "--"}</button>
-                <button className="odd-btn">{match.odds?.["2"] || "--"}</button>
-              </div>
-            </div>
-          ))}
-            
-        </div>
-      </div>*/}
-            </Routes>
-        </Router>
-      
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/second" element={<SecondPage />} />
+        <Route path="/signup" element={<Signup />} />
+        {/* <Route path="/contact" element={<ContactPage />} /> */}
+      </Routes>
+    </Layout>
+  </Router>
   
   );
 

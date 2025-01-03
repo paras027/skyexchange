@@ -1,0 +1,41 @@
+.match-header {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+}
+
+.match-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.match-header-left, .match-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.match-odds {
+  font-weight: 600;
+}
+
+.in-play-badge, .live-badge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+}
+
+.in-play-badge {
+  background-color: #22c55e;
+}
+
+.live-badge {
+  background-color: #3b82f6;
+}
+
+.matched-amount {
+  font-weight: 600;
+}
+

@@ -1,0 +1,87 @@
+.bookmaker-market {
+  border: 1px solid #e0e0e0;
+}
+
+.bookmaker-header {
+  background-color: #2a444e;
+  color: white;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookmaker-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bookmaker-limits {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+}
+
+.limit {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.limit-value {
+  font-weight: 500;
+}
+
+.bookmaker-content {
+  font-size: 14px;
+  background-color: #fffff0;
+}
+
+.bookmaker-labels {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  font-weight: 500;
+}
+
+.back-label, .lay-label {
+  padding: 8px;
+  text-align: center;
+}
+
+
+
+.bookmaker-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  border-top: 1px solid #e0e0e0;
+}
+
+
+.back-cell, .lay-cell {
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.back-cell {
+  background-color: #72bbef;
+}
+
+.back-cell:hover {
+  background-color: #62abdf;
+}
+
+.lay-cell {
+  background-color: #faa9ba;
+}
+
+.lay-cell:hover {
+  background-color: #ea99aa;
+}
+
+.odds-button {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+

@@ -1,0 +1,34 @@
+.tie-bet {
+  border: 1px solid #e0e0e0;
+}
+
+.tie-bet-header {
+  background-color: #2a444e;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tie-bet-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-size: 14px;
+}
+
+.tie-bet-option {
+  padding: 12px;
+}
+
+.tie-bet-odds {
+  width: 192px;
+  padding: 12px;
+  text-align: center;
+  background-color: #72bbef;
+  cursor: pointer;
+}
+
+.tie-bet-odds:hover {
+  background-color: #62abdf;
+}
+

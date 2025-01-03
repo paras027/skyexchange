@@ -1,0 +1,140 @@
+.odds-grid {
+  border: 1px solid #e0e0e0;
+}
+
+.odds-header {
+  display: grid;
+  grid-template-columns: 5fr 1fr 3fr;
+  font-size: 11px;
+}
+
+.odds-header > div {
+  padding: 8px;
+}
+
+.back-all, .lay-all {
+  text-align: center;
+  font-weight: 500;
+}
+
+.back-all {
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+
+.odds-row {
+  display: grid;
+  grid-template-columns: 3fr repeat(6, 1fr);
+  font-size: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: bold;
+}
+
+.odds-row:last-child {
+  border-bottom: none;
+}
+
+.team-info {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+
+
+.team-value {
+  color: #ef4444;
+}
+
+.odds-cell {
+  padding: 8px;
+  text-align: center;
+  border-right: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+
+
+.back-odds:hover {
+  background-color: #b6d6ef;
+}
+
+
+
+.lay-odds:hover {
+  background-color: #efb6bc;
+}
+
+.odds-amount {
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.oneb{
+  background-color: #D7E8F4;
+}
+.twob{
+  background-color: #C3DCEE;
+}
+
+.threeb{
+  background-color: #72BBEF;
+}
+
+.onel{
+  background-color: #FAA9BA;
+}
+
+.twol{
+  background-color: #EFD3D9;
+}
+
+.threel{
+  background-color: #F6E6EA;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content input {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-content button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content button:first-child {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.modal-content button:last-child {
+  background-color: #f44336;
+  color: #fff;
+}
